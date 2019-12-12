@@ -47,6 +47,10 @@ class UserView extends React.Component{
       <div class="container-fluid">
         <div class="row">
         
+        <div class="newT">
+          <Link class="btn btn-outline-success" to="/">Homepage</Link>
+        </div>
+        
             <table class="table">
               {
                 todos.length ?
@@ -57,7 +61,7 @@ class UserView extends React.Component{
                       <td class="col-4">{todo.description}</td>
                       <td class="col-4">{todo.state}</td>
                       <td class="col-2">{todo.user_id}</td>
-                      <td class="col-2"><Link class="btn btn-outline-info" to={"/manage/"+todo.id}>Update</Link></td>
+                      <td class="col-2"><Link class="btn btn-outline-info" to={"/edit-todo/"+todo.id}>Update</Link></td>
                     </tr>
                   </tbody>
                   </div>) : null
