@@ -2,7 +2,10 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+  "engines": {
+    "node": "9.5.0",
+    "npm": "5.7.1"
+  },
     "axios": "^0.19.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
