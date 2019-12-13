@@ -20,7 +20,7 @@ class UserEdit extends React.Component{
   {
     let userId = this.props.match.params.id;
 
-    const url = linkTo+"/api/users/"+userId
+    const url = linkTo+"/api/user/"+userId
     axios.get(url)
     .then(res =>
       {
@@ -35,7 +35,8 @@ class UserEdit extends React.Component{
         }
     })
     .catch(error=>{
-      alert("We Encoutered An Error Getting User")
+      alert("We Encoutered An Error Getting User");
+      window.location.href = '/';
     })
 
   }
